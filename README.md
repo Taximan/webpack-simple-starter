@@ -27,3 +27,13 @@ also one little tip, if you want to cut all ties to this repo you can always run
 
 ```rm .git -rf```
 
+
+# Running:
+
+for development
+
+```npm run dev```
+
+for production
+
+```npm run build```
