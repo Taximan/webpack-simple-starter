@@ -8,7 +8,7 @@ var webpack = require('webpack');
 module.exports = extend(defaults, {
   devtool: 'source-map',
   module: {
-    loaders: defaults.module.loaders.contact([
+    loaders: defaults.module.loaders.concat([
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract("style-loader", "css-loader")
@@ -16,6 +16,7 @@ module.exports = extend(defaults, {
     ])
   },
   plugins: defaults.plugins.concat([
+    new ExtractTextPlugin("styles.css"),
     new webpack.optimize.UglifyJsPlugin({}),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.optimize.DedupePlugin(),
