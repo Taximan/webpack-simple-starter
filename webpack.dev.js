@@ -9,6 +9,14 @@ module.exports = extend(defaults, {
   devServer: {
     contentBase: './dist'
   },
+  module: {
+    loaders: defaults.module.loaders.concat([
+      {
+        test: /.css$/,
+        loaders: ['style-loader', 'css-loader']
+      }
+    ])
+  },
   plugins: defaults.plugins.concat([
     new webpack.DefinePlugin({
       __PROD__: false,
