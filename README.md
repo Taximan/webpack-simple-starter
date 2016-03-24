@@ -36,4 +36,4 @@ for development
 
 for production
 
-```npm run build```
+```npm run prod```
