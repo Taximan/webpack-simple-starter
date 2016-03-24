@@ -9,3 +9,32 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
+
+
+#app {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#app h1 {
+  font-size: 69px;
+  font-family: Arial;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+#app img {
+  width: 320px;
+  height: auto;
+}
+
+#app p {
+  max-width: 320px;
+  padding-left: 32px;
+  font-size: 1.2em;
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+  border-left: 7px solid rgba(0, 0, 0, 0.7);
+}
